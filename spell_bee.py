@@ -18,7 +18,7 @@ error_prompt = "You must enter a number, please try again..."
 # The program exits with an error if this happens
 
 
-def user_input_check(prompt):  # asks for user input abd checks for not integer
+def user_input_check(prompt):  # asks for user input and checks for not integer
     global user_qty_entered
     while True:
         try:
@@ -42,7 +42,7 @@ wait = input("Please press enter to continue....\n")
 word_wl = []  # define a list so we can append to it later
 
 with open('words.txt', 'r') as f:
-    for lines in f:  # reads each line at a time (rather than store the whole of words.txt)
+    for lines in f:  # reads one line at a time (rather than store the whole of words.txt)
         line_contents = f.readline()
         words = line_contents.split()  # splits each line into words
         for word in words:  # stores all the "letters_qty" letter words in word
