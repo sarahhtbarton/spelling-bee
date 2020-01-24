@@ -40,7 +40,6 @@ abbreviates
 abbreviating
 abbreviation
 abbreviations
-abc
 abdicant
 abdicants
 abdicate
