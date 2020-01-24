@@ -49,10 +49,10 @@ with open('words.txt', 'r') as f:
             if len(word) == letters_qty:
                 word_wl.append(word)
 
-wl_elem = len(word_wl)
+last_word = len(word_wl)
 
 for i in range(word_qty):  # to display the requested number of words
-    rdm_word = random.randrange(0, wl_elem)
+    rdm_word = random.randrange(0, last_word)
     # this is not working for numbers out of range (see above COMMENT **)
     # might have to re-think the whole thing
     print(word_wl[rdm_word])
