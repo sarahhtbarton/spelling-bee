@@ -31,7 +31,7 @@ def user_input_check(prompt):  # asks for user input and checks for not integer
 
 
 user_input_check(letters_qty_prompt)
-letters_qty = user_qty_entered  # How many letters?
+letters_qty = user_qty_entered  # user input,How many letters?
 user_input_check(word_qty_prompt)
 word_qty = user_qty_entered  # How many words?
 print('\nYou have asked for '+str(word_qty) + ' words')
