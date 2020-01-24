@@ -10,9 +10,9 @@ import random
 
 letters_qty_prompt = "Enter letters per word..."
 word_qty_prompt = "Please enter how many words you need..."
-error_prompt = "You must enter a number, please try again..."
+error_prompt = '''Are you sure you entered a number?, please try again...'''
 
-# I havn't figured out how to catch user input errors for integers which
+# COMMENT ** I havn't figured out how to catch user input errors for integers which
 # are too large for the words.txt  e.g. there are no 50 letter words
 # and there may be less than 10 23 letters words.
 # The program exits with an error if this happens
@@ -53,4 +53,6 @@ wl_elem = len(word_wl)
 
 for i in range(word_qty):  # to display the requested number of words
     rdm_word = random.randrange(0, wl_elem)
+    # this is not working for numbers out of range (see above COMMENT **)
+    # might have to re-think the whole thing
     print(word_wl[rdm_word])
