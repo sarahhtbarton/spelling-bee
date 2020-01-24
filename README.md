@@ -8,4 +8,5 @@ You may find a better quality set of words (or dictionary) to use
 as long as you name it words.txt and place it in the same directory as
 spell_bee.py
 
-PS  I'm a noob and it probably shows, please feel free to correctme but please be nice  :)
+PS  I'm a noob and it probably shows, please feel free to correct
+me but please be nice  :)
