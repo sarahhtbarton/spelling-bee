@@ -19,7 +19,8 @@ error_prompt = '''Are you sure you entered a number?, please try again...'''
 # The program exits with an error if this happens
 
 
-def user_input_check(prompt):  # asks for user input and checks for not integer
+def user_input_check(prompt):
+    '''Asks for user input and checks for not integer.'''
     global user_qty_entered
     while True:
         try:
