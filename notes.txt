@@ -1,1 +1,0 @@
- this is for personal notes and is in the .gitignore file

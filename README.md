@@ -1,6 +1,6 @@
 # My first python project
 
-and I think it shows. Having trouble with error catching user input. I intend to start again after learning a little more about python
+A work in progress
 
 This script will generate a number of words with a specified word length.
 
