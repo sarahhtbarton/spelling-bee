@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# This version sucks but I'm learning from my mistakes 
+
 '''
 This script requires word.txt which is a list of over 65,000 words.
 You may find a better quality set of words (or dictionary) to use
