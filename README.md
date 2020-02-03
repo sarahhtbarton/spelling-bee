@@ -1,13 +1,13 @@
-# My first python project
+# My first python project 
+## spell_bee
 
-A work in progress
+A script to find a specific number of random english (UK) words
+of a specific number of letters for use in a spelling contest.
 
-This script will generate a number of words with a specified word length.
+The words are displayed in the console and you have the option
+of saving the words.
 
-The purpose of this is to make it easy to generate words for use in
-a spelling contest.
+Inpired by the game "spelling bee".
 
-This script requires word.txt which is a list of over 65,000 words.
-You may find a better quality set of words (or dictionary) to use
-as long as you name it words.txt and place it in the same directory as
-spell_bee.py
+THIS SCRIPT REQUIRES 'word.txt' FILE. which is a list of over
+65,000 words.
