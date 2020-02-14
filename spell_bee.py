@@ -46,7 +46,8 @@ while True:
     # after checking we got a number, make sure it's a positive ( >0 )
     def positive_num(number):
         if number <= 0:
-            print('Oops, the number must be greater than zero, please try again.')
+            print('Oops, the number must be greater\
+than zero, please try again.')
             return False
         else:
             return True
@@ -59,7 +60,8 @@ while True:
                     if len(word) == int(number):
                         num_letter_words.append(word)
         if not len(num_letter_words):
-            print('Oops, there are no ' + number + ' letter words available, please try again.')
+            print('Oops, there are no ' + number +
+                  ' letter words available, please try again.')
             return False
         else:
             return True
@@ -71,7 +73,10 @@ while True:
         # must be int or crash
         try:
             if int(number) > len(num_letter_words):
-                print('There are a maximum of ' + str(word_qty) + ' ' + str(letter_qty) + ' letter words available, please try again.')
+                print('There are a maximum of '
+                      + str(word_qty) + ' ' +
+                      str(letter_qty) +
+                      ' letter words available, please try again.')
                 return False
         except ValueError:
             return False
@@ -89,8 +94,9 @@ while True:
             # variable for user input
             prompt = "How many words?.... "
 
-        #  Two boolean variables. Start each as "False" to get into the while loop
-        # both need to be true to escape the while loop (user error checking)
+        # Two boolean variables. Start each as "False" to get into \
+        # the while# loop both need to be true to \
+        # escape the while loop (user error checking) \
         result = False
         check = False
         avail = False
@@ -147,7 +153,8 @@ while True:
     # write results to a file?
 
     while True:
-        save_file_answer = input('would you like to save the words to a file? (y/n): ')
+        save_file_answer = input(
+            'would you like to save the words to a file? (y/n): ')
         if save_file_answer in ('y', 'n', 'Y', 'N'):
             break
         else:
