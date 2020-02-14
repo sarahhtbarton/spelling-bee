@@ -14,7 +14,6 @@ Inpired by the game "spelling bee".
 THIS SCRIPT REQUIRES 'word.txt' FILE. which is a list of over
 65,000 words.
 
-
 '''
 import random
 import os
