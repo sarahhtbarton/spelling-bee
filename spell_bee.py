@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 '''
 A script to find a specific number of random english (UK) words
 of a specific number of letters for use in a spelling contest.
@@ -9,7 +8,7 @@ of saving the words to a plain text file.  This file will be
 stored in the ./your-words directory. If the directory does
 not exist, it will be created for you.
 
-Inpired by the game "spelling bee".
+Inspired by the game "spelling bee".
 
 THIS SCRIPT REQUIRES 'word.txt' FILE. which is a list of over
 65,000 words.
@@ -26,16 +25,16 @@ if not os.path.exists(save_path):
     os.makedirs(save_path)
 
 while True:
-    # main programm
+    # main programme
     file_name = 'words.txt'
     num_letter_words = []
 
-    # very simple - get user input
+    # get user input
     def user_input(prompt):
         number = input(prompt)
         return number
 
-    # to check that user input is a number and not a letter
+    # check that user input is a number and not a letter
     def is_num(number):
         try:
             int(number)
@@ -47,13 +46,12 @@ while True:
     # after checking we got a number, make sure it's a positive ( >0 )
     def positive_num(number):
         if number <= 0:
-            print('Ooops, the number must be greater than zero, please try again.')
+            print('Oops, the number must be greater than zero, please try again.')
             return False
         else:
             return True
 
     def check_letter_qty(number, file_name):
-        # num_letter_words = []
         with open(file_name, 'r') as file:
             for line in file:
                 words = line.split()
@@ -107,8 +105,6 @@ while True:
             result = is_num(qty_entered)
 
             # check for positive number
-            # all this to not trip over a value error
-            # (thers is probably a better way,but I'm a noob)
             if result:
                 check = positive_num(int(qty_entered))
                 if check:
@@ -162,10 +158,10 @@ while True:
         with open(save_file, 'w') as f:
             for w in range(int(word_qty)):
                 f.write(out_words[w] + '\n')
-        print()  # print a line to keep tidy
+        print()
         print('Your file has been saved in... ' + '\"' + save_file + '\"')
 
-    print()  # print a line to keep tidy
+    print()
 
     while True:
         re_run = input('Would you like more words? (y/n): ')
