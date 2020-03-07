@@ -11,7 +11,7 @@ not exist, it will be created for you.
 Inspired by the game "spelling bee".
 
 THIS SCRIPT REQUIRES 'word.txt' FILE. which is a list of over
-65,000 words.
+65,000 words.  (Find a better replacment soon)
 
 '''
 import random
